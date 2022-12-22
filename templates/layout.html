@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+    <link href="static/styles.css" rel="stylesheet">
+    <title>Weeb Nation: {% block title %}{% endblock %}</title>
+
+</head>
+
+<body>
+    <div class="backgroundContainer">
+        <img id="background" src="https://wallpaper.dog/large/20524051.jpg">
+
+        <audio id="backgroundMusic" class="bgm" src="https://user-images.githubusercontent.com/111708286/205416662-0ab86398-1313-45ce-bd7b-f127440de745.mp4" loop></audio>
+    </div>
+    <div class="headerBar">
+        <div class="leftBarContainer">
+            <a class="logoContainer" href="https://josuexreyes-studious-zebra-p49xggvqrrxfjx9-5000.preview.app.github.dev/">
+                <div class="logoImageContainer">
+                    <img class="logoImage" src="https://user-images.githubusercontent.com/111708286/205412244-6247f90e-d05d-408d-ae0c-d550d3612147.png">
+                </div>
+                <div class="logoweebnation">
+                    WeebNation
+                </div>
+            </a>
+            <img id="audioController" src="https://user-images.githubusercontent.com/111708286/205412302-8c2836bb-11c1-4ae6-87b6-f7226075b959.png" onclick="audioController(); imageChange();">
+            <div class="sourcesContainer">
+                <button class="link" onclick="showOrHide()">Sources</button>
+                <div class="dropdownContent">
+                    <div class="aboutCopyright">
+                        Updated to make sure all the content that's here, is credited if necessary and free to use.
+                    </div>
+                    <div class="sourceC">Projects Layout<br><a class="sourcesLink" href="https://github.com/Lyrenide/Hakurei_Shrine/tree/main" target="_blank">https://github.com/Lyrenide/Hakurei_Shrine/tree/main</a></div>
+                    <div class="sourceC">First Background Author<br><a class="sourcesLink" href="https://wallpaper.dog/black-anime" target="_blank">https://wallpaper.dog/black-anime</a></div>
+                    <div class="sourceC">Second Background & Quote Author<br><a class="sourcesLink" href="hhttps://anime.goodfon.com/senen/wallpaper-inuyasha-demon-ushki-mech-rukoiatka-dlinnye-volosy-ataka-ryv.html" target="_blank">https://anime.goodfon.com/senen/wallpaper-inuyasha-demon-ushki-mech-rukoiatka-dlinnye-volosy-ataka-ryv.html</a></div>
+                    <div class="sourceC">Layer 1 Image<br><a class="sourcesLink" href="https://wallpapers.com/wallpapers/darling-in-the-franxx-strelizia-behind-02-mctii69wiyjl5snh.html" target="_blank">https://wallpapers.com/wallpapers/darling-in-the-franxx-strelizia-behind-02-mctii69wiyjl5snh.html</a></div>
+                    <div class="sourceC">Background Music<br><a class="sourcesLink"href ="https://pixabay.com/music/modern-classical-anime-108841/" target="_blank">https://pixabay.com/music/modern-classical-anime-108841/</a></div>
+                    <div class="sourceC">Genres Links<br><a class="sourcesLink" href="https://myanimelist.net/anime.php" target="_blank">https://myanimelist.net/anime.php</a></div>
+                    <div class="sourceC">Shonen Picture<br><a class="sourcesLink" href="https://wallpaperaccess.com/shonen-anime" target="_blank">https://wallpaperaccess.com/shonen-anime</a></div>
+                    <div class="sourceC">Isekai Picture<br><a class="sourcesLink" href="https://otakusnotes.com/best-isekai-anime-on-funimation/" target="_blank">https://otakusnotes.com/best-isekai-anime-on-funimation/</a></div>
+                    <div class="sourceC">Seinen Picture<br><a class="sourcesLink" href="https://www.denofgeek.com/tv/anime-beginners-genre-guide/" target="_blank">https://www.denofgeek.com/tv/anime-beginners-genre-guide/</a></div>
+                    <div class="sourceC">Shouja Picture<br><a class="sourcesLink" href="https://www.fandomspot.com/high-school-romance-anime/" target="_blank">https://www.fandomspot.com/high-school-romance-anime/</a></div>
+                    <div class="sourceC">Josei Picture<br><a class="sourcesLink" href="https://ultramunch.com/top-5-josei-anime-18-only/" target="_blank">https://ultramunch.com/top-5-josei-anime-18-only/</a></div>
+                    <div class="sourceC">Ecchi Picture<br><a class="sourcesLink" href="https://reelrundown.com/animation/Best-Ecchi-Anime" target="_blank">https://reelrundown.com/animation/Best-Ecchi-Anime</a></div>
+                    <div class="sourceC">Harem Picture<br><a class="sourcesLink" href="https://www.crunchyroll.com/anime-news/2022/09/10-1/arifureta-from-commonplace-to-worlds-strongest-tv-anime-returns-for-season-3" target="_blank">https://www.crunchyroll.com/anime-news/2022/09/10-1/arifureta-from-commonplace-to-worlds-strongest-tv-anime-returns-for-season-3</a></div>
+                    <div class="sourceC">Mecha Picture<br><a class="sourcesLink" href="https://www.fandom.com/articles/5-mecha-anime-that-will-make-you-fall-in-love-with-the-genre" target="_blank">https://www.fandom.com/articles/5-mecha-anime-that-will-make-you-fall-in-love-with-the-genre</a></div>
+                    <div class="sourceC">Slice of Life Picture<br><a class="sourcesLink" href="https://www.fandomspot.com/best-slice-of-life-anime-characters/" target="_blank">https://www.fandomspot.com/best-slice-of-life-anime-characters/</a></div>
+                    <div class="sourceC">Iyashikei Picture<br><a class="sourcesLink" href="https://www.yoair.com/blog/a-beginners-guide-to-the-extraordinary-and-diverse-world-of-anime/" target="_blank">https://www.yoair.com/blog/a-beginners-guide-to-the-extraordinary-and-diverse-world-of-anime/</a></div>
+                    <div class="sourceC">Kodomomuke Picture<br><a class="sourcesLink" href="https://okuha.com/is-anime-for-kids/" target="_blank">https://okuha.com/is-anime-for-kids/</a></div>
+                    <div class="dm">If you have any concerns about the content displayed here, please email me | josuereyes3371@gmail.com</div>
+                </div>
+            </div>
+        </div>
+        <div class="rightBarContainer">
+            {% if session["user_id"] %}
+                <ul class="rightBarStuff">
+                    <img class="separator hamburgerStuff" src="https://user-images.githubusercontent.com/111708286/205412274-91dd376c-675d-4636-a177-7b96932d509f.png">
+                    <a class="about hamburgerStuff" href="/about">About</a>
+                    <img class="separator hamburgerStuff" src="https://user-images.githubusercontent.com/111708286/205412274-91dd376c-675d-4636-a177-7b96932d509f.png">
+                    <a class="contact hamburgerStuff" href="/contact">Contact</a>
+                    <!--<img class="separator hamburgerStuff" src="https://user-images.githubusercontent.com/111708286/205412274-91dd376c-675d-4636-a177-7b96932d509f.png">
+                    <a class="manga hamburgerStuff" href="/manga">Manga</a> -->
+                    <img class="separator hamburgerStuff" src="https://user-images.githubusercontent.com/111708286/205412274-91dd376c-675d-4636-a177-7b96932d509f.png">
+                    <a class="shop hamburgerStuff" href="/shop">Shop</a>
+                </ul>
+                <ul class="rightbarStuff">
+                    <img class="separator hamburgerStuff" src="https://user-images.githubusercontent.com/111708286/205412274-91dd376c-675d-4636-a177-7b96932d509f.png">
+                    <a class="logout hamburgerStuff" href="/logout">Log Out</a>
+                </ul>
+            {% else %}
+                <ul class="rightbarStuff">
+                    <img class="separator hamburgerStuff" src="https://user-images.githubusercontent.com/111708286/205412274-91dd376c-675d-4636-a177-7b96932d509f.png"></li>
+                    <a class="register hamburgerStuff" href="/register">Register</a>
+                    <img class="separator hamburgerStuff" src="https://user-images.githubusercontent.com/111708286/205412274-91dd376c-675d-4636-a177-7b96932d509f.png"></li>
+                    <a class="login hamburgerStuff" href="/login">Log In</a>
+                </ul>
+                <ul class="menuHamburger"><ul class="menuHamburgerBtn"></ul></ul>
+            {% endif %}
+        </div>
+    </div>
+
+    <main >
+        {% block main %}{% endblock %}
+    </main>
+
+    <div class="footerLayer">
+        <div class="footerLayerBg">
+            <a class="footerLayerAuthor" href="contact.html" target="_blank">
+                Webpage by: JosuexReyes
+            </a>
+        </div>
+    </div>
+</body>
+
+
+<script> src="static/anime.js"</script>
+
+</html>

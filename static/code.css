@@ -1,0 +1,56 @@
+
+.layer1 {
+    position: relative;
+}
+
+.layer1Container {
+    padding: 1 em;
+    width: 50em;
+    height: 27em;
+    border-radius: 1.5em;
+    margin: 15em auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2em rgb(69, 69, 69);
+}
+
+.description {
+    color: white;
+    margin: 3em 2em 3em 5em;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    word-wrap: break-word;
+}
+
+form {
+    color: white;
+    border: 0.2em solid white;
+    border-radius: 2em;
+    width: 475px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(250, 0, 0, 0.5), rgba(107, 39, 0, 0.5));
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+svg {
+    color: rgb(0, 0, 0);
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}

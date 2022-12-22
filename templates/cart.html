@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}
+    Cart
+{% endblock %}
+
+{% block body %}
+
+<body>
+    <h1>Items</h1>
+    {% for item in items %}
+        <h2>{{ items["item"] }}</h2>
+        <form action="/cart" method="post">
+            <input name="id" type="hidden" value="{{ item['id'] }}">
+            <input type="submit" value="Add to Cart">
+        </form>
+    {% endfor %}
+</body>
+    <script src = "/static/anime.js"></script>
+
+{% endblock %}
+
