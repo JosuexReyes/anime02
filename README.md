@@ -1,6 +1,7 @@
 Project Title: Anime 2
 
 Description:
+*Was completed with the help of taking cs50*
 
 Psuedocode:
 
